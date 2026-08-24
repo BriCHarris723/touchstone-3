@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - North Star Bakery</title>
+    <!-- Connects the visual styling system directly to this page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="bakery-logo.png" alt="North Star Bakery logo showing a minimalist star and rolling pin">
+        <h1>North Star Bakery</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact &amp; Pre-Orders</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Welcome to the Neighborhood</h2>
+            <p>At North Star Bakery, we wake up before dawn to craft fresh, handmade breads, pastries, and treats for our local community. We use simple, honest ingredients to bring warmth to your morning routine.</p>
+        </section>
+        <section>
+            <h2>Featured Item of the Week</h2>
+            <p>Check out our seasonal special, highlighted below. Freshly baked every morning using locally sourced ingredients.</p>
+            <picture>
+                <source media="(min-width: 800px)" srcset="bakery-feature-large.jpg">
+                <img src="bakery-feature-small.jpg" alt="A beautiful rustic display of our seasonal morning pastries on a wooden table">
+            </picture>
+        </section>
+        <section>
+            <h2>What We're Known For</h2>
+            <ul>
+                <li>Sourdough loaves made with a 50-year-old starter</li>
+                <li>Flaky, buttery croissants rolled by hand</li>
+                <li>Custom celebration cakes built to order</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Hours &amp; Location</h2>
+            <p><strong>Address:</strong> 123 Main Street, Community Center</p>
+            <p><strong>Hours:</strong> Tuesday – Sunday, 6:00 AM – 2:00 PM (Or until sold out!)</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 North Star Bakery. All rights reserved. Built for community comfort.</p>
+    </footer>
+</body>
+</html>
