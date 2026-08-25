@@ -1,24 +1,17 @@
-/* ==========================================================================
-   1. GLOBAL SYSTEM (3 Colors, 2 Fonts, Mobile-First Base)
-   ========================================================================== */
 body {
-    background-color: #fdfbf7;     /* Color 1: Warm pastry cream background */
-    color: #4a3728;                /* Color 2: Dark chocolate readable text */
-    font-family: Arial, sans-serif;  /* Font 1: Simple body font for clean scanning */
+    background-color: #fdfbf7;
+    color: #4a3728;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
-
-/* Typography Hierarchy */
 h1, h2, h3 {
-    color: #8b5a2b;                /* Color 3: Warm baked brown heading accent */
-    font-family: 'Georgia', serif;   /* Font 2: Classic editorial font for style hierarchy */
+    color: #8b5a2b;
+    font-family: 'Georgia', serif;
     margin-top: 0;
     margin-bottom: 15px;
 }
-
-/* Images & Media Responsiveness */
 img, picture, video {
     max-width: 100%;
     height: auto;
@@ -26,70 +19,54 @@ img, picture, video {
     margin: 15px 0;
     border-radius: 4px;
 }
-
-/* ==========================================================================
-   2. REPEATED LAYOUT ELEMENTS (Navigation Header & Footer)
-   ========================================================================== */
 header {
     background-color: #fdfbf7;
     padding: 20px;
     text-align: center;
 }
-
 header img {
     margin: 0 auto 10px auto;
     max-height: 80px;
 }
-
-/* Flexbox Navigation Implementation */
 nav ul {
-    background-color: #8b5a2b;     /* Deep brand accent bar */
-    list-style: none;              /* Removes list bullets */
+    background-color: #8b5a2b;
+    list-style: none;
     margin: 0;
     padding: 15px;
-    display: flex;                 /* Flexbox row layout */
-    flex-direction: column;        /* Stacks top-to-bottom on mobile screens */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 15px;                     /* Clean space gaps between links */
+    gap: 15px;
 }
-
 nav ul li a {
-    color: #fdfbf7;                /* Light cream on dark brown for high contrast */
-    text-decoration: none;         /* Clean modern look without standard underlines */
+    color: #fdfbf7;
+    text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
 }
-
-/* ==========================================================================
-   3. FORM STYLING MECHANICS (Contact Page Groups)
-   ========================================================================== */
 form {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(74, 55, 40, 0.05);
 }
-
 fieldset {
-    border: 2px solid #8b5a2b;     /* Structural grouping box alignment */
+    border: 2px solid #8b5a2b;
     border-radius: 6px;
     margin-bottom: 20px;
     padding: 15px;
 }
-
 legend {
     color: #8b5a2b;
     font-weight: bold;
     padding: 0 10px;
     font-family: 'Georgia', serif;
 }
-
 label {
-    display: block;                /* Forces label layout onto its own clean text line */
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
-
 input[type="text"],
 input[type="email"],
 input[type="date"],
@@ -101,9 +78,8 @@ textarea {
     border-radius: 4px;
     background-color: #fdfbf7;
     color: #4a3728;
-    box-sizing: border-box;        /* Stops text boxes from spilling out of boundaries */
+    box-sizing: border-box;
 }
-
 button {
     background-color: #8b5a2b;
     color: #fdfbf7;
@@ -114,23 +90,16 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-
-/* ==========================================================================
-   4. MULTI-COLUMN RESPONSIVE LAYOUT (At least 1 Media Query)
-   ========================================================================== */
 @media (min-width: 768px) {
-    /* Shifts navigation to a flat horizontal line layout on desktop setups */
     nav ul {
-        flex-direction: row;       /* Changes vertical stack to a flat horizontal layout */
+        flex-direction: row;
         justify-content: center;
     }
-
-    /* Centers the main text canvas column smoothly on high-resolution displays */
     main {
         max-width: 800px;
         margin: 40px auto;
         padding: 30px;
-        background-color: #ffffff;  /* Content cards separate from cream background */
+        background-color: #ffffff;
         box-shadow: 0 4px 12px rgba(74, 55, 40, 0.08);
         border-radius: 8px;
     }
